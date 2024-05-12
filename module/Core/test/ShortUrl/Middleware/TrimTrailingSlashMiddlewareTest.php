@@ -44,7 +44,7 @@ class TrimTrailingSlashMiddlewareTest extends TestCase
 
     public static function provideRequests(): iterable
     {
-        yield 'trailing slash disabled' => [
+        yield 'trailing slash enabled' => [
             false,
             $inputReq = ServerRequestFactory::fromGlobals(),
             function (ServerRequestInterface $request) use ($inputReq): void {
